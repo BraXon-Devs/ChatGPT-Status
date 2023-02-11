@@ -1,3 +1,4 @@
+'use strict';
 // background.js
 chrome.runtime.onInstalled.addListener (function () {
   // Check if the user is on the chat page
