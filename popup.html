@@ -7,77 +7,94 @@
     <title>ChatGPT Desktop Notification Toast</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet" />
-    <link rel="manifest" href="manifest.json">
-    <link rel="stylesheet" href="tailwind.css">
+    <link href="braxon.css" rel="stylesheet" />
+
+    <!-- <link rel="stylesheet" href="tailwind.css"> -->
 </head>
 
-<body class="bg-gray-100 h-screen font-sans">
-    <div class="max-w-lg p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-        <img src="chatgpt-icon.png" width="28" height="28" title="icon" class="mr-6">
-        <a href="https://status.openai.com/" target="_newtab" title="OpenAI Status Page">
-            <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">ChatGPT Notification
-                Info</h5>
-        </a>
-        <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Thank you for using our extension. If you enjoy it
-            and or have any questions, check out these links below:</p>
-        <ul class="space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
-            <li><a href="https://github.com/BraXon-Devs/ChatGPT-Status"
-                    class="inline-flex items-center text-blue-600 hover:underline">
-                    Check out this on Github
-                    <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z">
-                        </path>
-                        <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z">
-                        </path>
-                    </svg>
-                </a></li>
-            <li><a href="https://github.com/BraXon-Devs/ChatGPT-Status/community"
-                    class="inline-flex items-center text-blue-600 hover:underline">
-                    Visit the community forums
-                    <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z">
-                        </path>
-                        <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z">
-                        </path>
-                    </svg>
-                </a></li>
-            <li><a href="https://github.com/BraXon-Devs/ChatGPT-Status/contribute" class=" inline-flex items-center text-blue-600
-                    hover:underline">
-                    Like this project & want to contribute?
-                    <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z">
-                        </path>
-                        <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z">
-                        </path>
-                    </svg>
-                </a></li>
-            <li><a href="https://github.com/BraXon-Devs/ChatGPT-Status/issues" class=" inline-flex items-center text-blue-600
-                            hover:underline">
-                    Spot a bug or an issue, let us know here
-                    <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z">
-                        </path>
-                        <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z">
-                        </path>
-                    </svg>
-                </a></li>
-        </ul>
-        <script data-name="BMC-Widget" data-cfasync="false"
-            src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="BraXon"
-            data-description="Support me on Buy me a coffee!"
-            data-message="Thank you for your generosity, now we can buy fuel and keep on coding! Come and have some coffee with us: https://discord.gg/2bFQkgeAab"
-            data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+<body>
+    <div
+        class="relative flex min-h-screen flex-col justify-center overflow-hidden py-1 shadow dark:border-gray-700 dark:bg-gray-800 sm:py-10">
+        <div
+            class="top-0 bg-white px-3 pt-10 pb-3 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:max-w-lg sm:rounded-lg sm:px-10">
+            <div class="mx-auto max-w-xl">
+                <img src="braxon_logo_LG.png" class="h-8" alt="Tailwind Play" />
+                <h5 class="font-semibold tracking-tight text-gray-900 dark:text-blue-400">ChatGPT Notification
+                    Info</h5>
+                <div class="divide-y divide-gray-300/50">
+                    <div class="space-y-6 py-8 text-base leading-7 text-gray-600">
+                        <p>Thank you for using our extension. If you enjoy it and or have any questions, check out these
+                            links below:</p>
+                        <ul class="list-inside list-disc space-y-1 text-gray-500 dark:text-gray-400">
+                            <li>
+                                <a href="https://github.com/BraXon-Devs/ChatGPT-Status" target="_popup"
+                                    class="inline-flex items-center text-sky-500 hover:text-sky-600 text-base font-semibold">
+                                    Check out this on Github
+                                    <svg class="ml-2 h-5 w-5" fill="currentColor" viewBox="0 0 20 20"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z">
+                                        </path>
+                                        <path
+                                            d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/BraXon-Devs/ChatGPT-Status/community" target="_popup"
+                                    class="inline-flex items-center text-sky-500 hover:text-sky-600 text-base font-semibold">
+                                    Visit the community forums
+                                    <svg class="ml-2 h-5 w-5" fill="currentColor" viewBox="0 0 20 20"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z">
+                                        </path>
+                                        <path
+                                            d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/BraXon-Devs/ChatGPT-Status/issues" target="_popup"
+                                    class="inline-flex items-center text-sky-500 hover:text-sky-600 text-base font-semibold">
+                                    Spot a bug or an issue, let us know here
+                                    <svg class="ml-2 h-5 w-5" fill="currentColor" viewBox="0 0 20 20"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z">
+                                        </path>
+                                        <path
+                                            d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                        <p>This project is still an ongoing project until it is finished, however... you can still follow up with us on <a href="https://discord.gg/2bFQkgeAab">discord</a> anytime. <B>AND</B> your support is much appriciated.</p>
+                    </div>
+                    <div class="pt-8 text-base font-semibold leading-7">
+                        <p class="text-gray-900">Want to dig deeper into this project?</p>
+                        <p>
+                            <a href="https://github.com/BraXon-Devs/ChatGPT-Status/contribute" target="_popup" class="text-sky-500 hover:text-sky-600">Fork it Here
+                                &rarr;</a>
+                        </p>
+                        <p class="text-gray-900">Feeling generous?</p>
+                        <p>
+                            <a href="https://www.buymeacoffee.com/BraXon" class="text-sky-500 hover:text-sky-600" target="_popup">Buy us a cup-a-coffee!
+                                &rarr;</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
+<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+    data-id="BraXon" data-description="Support us & buy us a cup of coffee!" 
+    data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
     <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
 </body>
 
 </html>
+
