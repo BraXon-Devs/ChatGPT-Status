@@ -1,5 +1,5 @@
 {
-  "manifest_version": 4,
+  "manifest_version": 2,
   "name": "ChatGPT Desktop Notification Toast",
   "version": "1.0.0",
   "description": "Displays notifications about the status of ChatGPT.",
@@ -13,12 +13,5 @@
     "default_icon": "chatgpt-icon.png",
     "default_popup": "popup.html"
   },
-  "permissions": ["activeTab", "notifications"],
-  "content_security_policy": "script-src 'self' https://openai.com/chat; object-src 'self'",
-  "web_accessible_resources": [
-    "tailwind.css",
-    "fontawesome.css",
-    "flowbite.min.css",
-    "flowbite.js"
-  ]
+  "permissions": ["activeTab", "notifications"]
 }
